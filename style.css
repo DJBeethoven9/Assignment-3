@@ -5,8 +5,8 @@ Maitham Ali Isa         20186039
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #f4f4f9; /* Light background color */
+    color: #333; /* Dark text color */
 }
 
 h1 {
@@ -25,12 +25,12 @@ table {
     margin: 0 auto;
     border-collapse: collapse;
     margin-bottom: 20px;
-    background-color: #fff;
+    background-color: #fff; /* Light background color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 table th {
-    background-color: #004fa3! important;
+    background-color: #004fa3; /* Dark background color for header */
     color: white;
 }
 
@@ -41,7 +41,13 @@ table th, table td {
 }
 
 table td {
-    color: #000;
+    color: #000; /* Dark text color */
+}
+
+/* Ensure light theme is applied */
+body, table, table td {
+    background-color: #f4f4f9 !important; /* Light background color */
+    color: #333 !important; /* Dark text color */
 }
 
 @media (max-width: 480px) {
